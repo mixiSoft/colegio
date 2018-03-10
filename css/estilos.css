@@ -1,0 +1,283 @@
+* {
+margin: 0px;
+padding: 0px;
+color: white;
+}
+
+header,section, footer, aside, nav, article, figure, figcaption,form,canvas
+hgroup{
+display: block;
+}
+
+h2 {
+font: bold 14px Times New Roman, sans-serif;
+}
+
+body {
+text-align: center;
+}
+
+form input,textarea,select{color: black;}
+
+canvas
+{
+	
+}
+canvas :hover{
+	
+}
+
+#agrupar {
+	background: #F2F2F2;
+	
+	width: 1000px; /*Ancho del contenedor*/
+	margin: 10px auto; /*auto= margen superior e inferior*/
+	text-align: left; /*text-align es hereditaria por lo tanto 
+	                    debemos regresarla a su configuración normal*/
+}
+
+#cabecera img {  
+	float:left; 
+	width: 70px;
+	height: 70px;   
+	-webkit-transition: -webkit-transform 1s ease-in-out 0.5s;
+	-moz-transition: -moz-transform 1s ease-in-out 0.5s;
+	-ms-transition: -ms-transform 1s ease-in-out 0.5s;
+	-o-transition: -o-transform 1s ease-in-out 0.5s;
+	transition: transform 1s ease-in-out 0.5s;
+	-webkit-transition: -webkit-transform 1s ease-in-out 0.5s
+	-moz-transition: -moz-transform 1s ease-in-out 0.5s;
+	-ms-transition: -ms-transform 1s ease-in-out 0.5s;
+	-o-transition: -o-transform 1s ease-in-out 0.5s;
+	transition: transform 1s ease-in-out 0.5s;	
+}
+#cabecera {
+	background: -webkit-linear-gradient(top,#034569,#64AAD0);
+	background: -moz-linear-gradient(top,#034569,#64AAD0);
+	background: -ms-linear-gradient(top,#034569,#64AAD0);
+	background: -o-linear-gradient(top,#034569,#64AAD0);
+	background: linear-gradient(top,#034569,#64AAD0);
+	font: bold 30px Felix Titling, sans-serif;
+	text-align: center;
+	text-shadow: #034569 6px 4px 8px;
+	color: white;
+	padding: 15px;
+	
+}
+#cabecera h1:hover
+{
+text-shadow: #034569 0px 8px 10px;
+}
+#cabecera marquee
+{
+	padding: 0px;
+	font: 11px Felix Titling, sans-serif;
+}
+#cabecera img:hover {
+	-webkit-transform: scale(2,2) translate(30px,20px);
+	-moz-transform: scale(2,2) translate(30px, 20px);
+	-ms-transform: scale(2,2) translate(30px, 20px);
+	-o-transform: scale(2,2) translate(30px,20px);
+	transform: scale(2,2) translate(30px, 20px);
+	
+	opacity: 0.35;
+}
+#menu ul, #menu li, #menu a{
+	margin: 0 auto; 
+	padding: 0;
+}
+#menu a{text-decoration: none;}
+#menu ul{list-style: none;}
+#menu {
+	margin: 0 auto;
+	background: #034569;
+	height: 40px;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+	font-family:  bold sans-serif, verdana,"Lucida Sans";
+	font-weight: bold;
+}
+
+#menu > ul > li{
+	float:left;
+	margin-left:15px;
+	position:relative;
+}
+#menu > ul > li > a{
+	color: white;/*color de fuente del menu principal*/
+	line-height: 40px;/*ancho de linea*/
+	font-weight: 15px;/*Tamaño de fuente*/
+	padding: 11px 20px;/*Arriba y abajo 11px, costados 20px*/
+	
+	moz-transition: -moz-transform 1s ease-in-out 0.5s;
+	webkit-transition: -moz-transform 1s ease-in-out 0.5s;
+}
+#menu > ul > li > a:hover{
+background: white;
+	color: #034569;
+	-moz-transform: scale(1.2,1.2);
+	-webkit-transform: scale(1.2,1.2);
+}/*cambia el color del menu al pasar el Mouse*/
+
+#menu > ul > li > ul{
+	display:none;
+	padding: 5px 0px;/*padding del submenu sup e inf 5px, der e izq 0px*/
+	background: #fafafa;
+	text-align: left;
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	margin-left:  -75px;
+	width: 150px;
+	border-radius: 5px;
+	-webkit-transition: all .3s .1s;
+	-moz-transition: all .3s .1s;
+	-ms-transition: all .3s .1s;
+	-o-transition: all .3s .1s;
+	transition: all .3s .1s;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+}
+#menu > ul > li:hover > ul{
+	display: block;
+	top: 40px; /*desciende hasta 40px*/
+    
+	}
+#menu > ul > li > ul:before{
+	content: '';
+	display: block;
+	border-color: transparent transparent #fafafa transparent;
+	border-style: solid;
+	border-width: 10px;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	margin-left: -10px;
+}
+#menu > ul ul > li {position: relative;}
+#menu ul ul a{
+	color: #034569;
+	font-family: verdana;
+	font-size: 12px;
+	background: white;
+	padding: 5px 8px 7px 16px;
+	display: block;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	-ms-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+#menu > ul > li > ul >li >ul:before{
+	content: '';
+	display: block;
+	border-color: transparent #333 transparent transparent;
+	border-style: solid;
+	border-width: 10px;
+	position: absolute;
+	top: 10%;
+	left:  -20px;
+	
+}
+/*estilos del sub-submenu*/
+#menu ul ul ul{
+	font-size:10px;
+	display: none;
+	position: absolute;
+		top: -15px;
+		left: 180px;
+	padding: 16px 0 20px;
+	background: #F2F2F2;
+	text-align: left;
+	width: 180px;
+	border-radius: 15px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+}
+#menu ul ul >li:hover > ul{
+	display: block;
+	left: 150px;
+}
+#menu ul ul a:hover{
+	background: #086CA2;
+	color: white;
+}
+#seccion {
+	width: 70%;
+	margin: 20px;
+	float: left;
+}
+
+#columna {
+	
+	width: 20%;
+	margin: 20px 0px;
+	float: left;
+	padding: 20px;
+	background: #086CA2;
+}
+#columna figure
+{
+	width: 50%
+	display:inline-block;
+}
+#columna img
+{
+	padding: 10px;
+	-webkit-transition: -webkit-transform 1s ease-in-out 0.5;
+	-moz-transition: -moz-transform 1s ease-in-out 0.5;
+	-ms-transition: -ms-transform 1s ease-in-out 0.5;
+	-o-transition: -o-transform 1s ease-in-out 0.5;
+	transition: transform 1s ease-in-out 0.5;
+}
+
+#columna img:hover{
+	background: #086CA2;	
+	-webkit-transform: scale(1.2,1.2);
+	-moz-transform: scale(1.2,1.2);
+	-ms-transform: scale(1.2,1.2);
+	-o-transform: scale(1.2,1.2);
+	transform: scale(1.2,1.2);
+	opacity: 0.9;
+}
+
+
+#pie {
+	clear: both;
+	background: #086CA2;
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid #999999;
+}
+
+article {
+	background: #3C9DD0;
+	border: 3px solid #034569;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+article p {padding:10px;}
+article img{
+	border: 2px solid #034569;
+	width: 55%;
+}
+article img:hover{
+	border: 3px solid #034569;
+	width: 56%;
+	opacity:0.94;
+}
+
+article footer {
+	text-align: right;
+}
+
+time {
+	color: #999999;
+}
+
+figcaption {
+	font: italic 10px verdana, sans-serif;
+}

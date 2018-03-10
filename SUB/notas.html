@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="IES SAN FRANCISCO DE BORJA">
+		<meta name="keywords" content="IES SAN FRANCISCO DE BORJA">
+		<title>IES SFB - Notas</title>
+		<link rel="stylesheet" href="../css/estilos.css">
+		<link rel="icon" type="image/png" href="../images/logo.png">
+		<script>
+				function validar(){
+					if ('contraseña' != document.form.txtcontra.value)
+						{
+							
+							window.location="#";
+							alert('¡Su usuario o contraseña no es valida!');
+							document.form.txtusuario.focus();
+						return;
+						}
+					else
+					{
+						/* Si todo está OK se prosigue con lo que sea: */
+							window.location="notas2.html";
+							alert('¡Acceso Permitido...!');
+						document.form.submit;
+					}
+				}
+</script>
+	</head>
+	<body>
+		<div id="agrupar">
+			
+			<nav id="menu">
+				<ul>
+					<li><a href="../index.html">INICIO</a></li>
+					<li><a href="#">NOSOTROS</a>
+						<ul>
+							<li><a href="historia.html">HISTORIA</a></li>
+							<li><a href="mision.html">MISIÓN</a></li>
+							<li><a href="vision.html">VISIÓN</a></li>
+						</ul>
+					</li>
+					<li><a href="../docentes.html">DOCENTES</a></li>
+					<li><a href="#">ESTUDIANTES</a>
+						<ul>
+							<li><a href="cursos.html">CURSOS</a></li>
+							<li><a href="notas.html">NOTAS</a></li>
+							
+						</ul></li>
+					<li><a href="../actividades.html">ACTIVIDADES</a></li>
+					<li><a href="#">CONTACTOS</a>
+						<ul>
+							<li><a href="justificaciones.html">JUSTIFICACIONES</a></li>
+							<li><a href="Padres.html">PADRES</a></li>
+						
+						</ul></li>
+			</nav>
+			<section id="seccion">
+				
+								
+				<article>
+				<h1>NOTAS</H1>
+				<BR>
+				
+					<form name="form"  method="post">
+					<table align="center">
+					<tr>
+					<td valign="top" align="center">
+					<h1>Ingrese Usuario y Contraseña:</h1>
+					<br>
+						 Usuario :
+						  <input name="txtusuario" type="text" id="txtusuario" style="text-align:left" size="20" maxlength="50"  >
+						 Contraseña :
+						 <input name="txtcontra" type="password" id="txtcontra" style="text-align:left" size="20" maxlength="20"  >
+						<input type="button" name="btnenvio"value="Aceptar" onClick="validar()" >
+					</td>
+					</tr>
+					</table>
+					</form>
+				</article>
+			</section>
+			
+			<footer id="pie">
+				&copy; SFB Todos los Derechos Reservados  2014
+			</footer>
+		</div>
+	</body>
+</html>
